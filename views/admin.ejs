@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Administrator portal</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" type="text/css" href="/admin.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-light bg-dark">
+      <h3 style="color:white"><i class="fas fa-shield"></i> Attendance Portal - Admin</h3> 
+      <form action="/logout" method="POST">
+        <button class="btn btn-danger">Log-out <i class="fas fa-sign-out-alt"></i></button>
+      </form>
+      
+  
+      
+  </nav>
+
+  <div class="jumbotron">
+    
+
+    <h3><i class="fas fa-user-tie"></i> Welcome <%= currentadmin.name %> !! </h3><br>
+
+  <div class="row">
+
+
+  <div class="col-sm-6">
+    <div class="card text-white bg-primary mb-3">
+       <img src="\student.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Student</h5>
+        <p class="card-text">Add new students into the system or remove existing students. </p>
+        <a href="/viewstudent/" class="btn btn-dark">Manage Student</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col-sm-6">
+    <div class="card text-white bg-warning mb-3">
+      <img src="\empf.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Staff</h5>
+        <p class="card-text">Add new staff or remove existing staff from the system.</p>
+        <a href="/viewstaff" class="btn btn-dark">Manage Staff</a>
+      </div>
+    </div>
+  </div>
+
+   <div class="col-sm-6">
+    <div class="card text-white bg-success mb-3">
+      <img src="\fedb.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Manage Feedback</h5>
+        <p class="card-text">view or manage feedbacks submitted by the users.</p>
+        <a href="/viewfeedback/" class="btn btn-dark">View Now</a>
+      </div>
+    </div>
+  </div>
+
+  
+
+
+   <div class="col-sm-6">
+    <div class="card text-white bg-info mb-3">
+      <img src="\c.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Admin</h5>
+        <p class="card-text">Add new admins or remove existing ones</p>
+        <a href="/viewadmin/" class="btn btn-dark">View Now</a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+</div>
+</div>
+
+
+</body>
+</html>
