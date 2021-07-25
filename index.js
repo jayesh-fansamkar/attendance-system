@@ -28,6 +28,7 @@ const feedback = require('./models/feedback');
 
 const mongoose = require('mongoose');
 
+//Enter your database name in the line below, for Db models check the models folder
 mongoose.connect('mongodb://localhost:27017/attendancesys', {useNewUrlParser: true, useUnifiedTopology: true});
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
